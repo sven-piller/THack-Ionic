@@ -1,0 +1,219 @@
+<ion-view title="Tspire">
+	<ion-content>
+		<div class="list  list-inset" ng-controller="Q1Ctrl">
+      <div class="item item-divider balanced-bg">
+        Kind of travel
+      </div>
+			<div class="row gallery" style="min-height:200px;">
+				<div class="col col-50" on-tap="onTap()" ng-repeat="item in typeList">
+					<a ng-model="item.checked"                      ng-checked="item.checked" class="item" href="#" style="background-image:url({{item.img}});background-repeat: no-repeat;background-position: center; min-height:200px;">
+						&nbsp;<br>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<pre ng-bind="typeList | json"></pre>
+		</div>
+
+		<div class="list  list-inset" ng-controller="Q1Ctrl">
+
+			<div class="row">
+				<div class="col">
+					<a class="item" on-tap="onTap()" href="#" style="background-image:url('img/family.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+						&nbsp;<br>
+					</a>
+				</div>
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+			</div>
+			<div class="row" style="min-height:200px;">
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+			</div>
+			<div class="row" style="min-height:200px;">
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+			</div>
+			<div class="item item-divider energized-bg">
+				Where to go
+			</div>
+			<div class="row" style="min-height:200px;">
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/city.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+			</div>
+			<div class="row" style="min-height:200px;">
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/countryside.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/camping.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+			</div>
+			<div class="item item-divider energized-bg">
+				What to do
+			</div>
+			<div class="row" style="min-height:200px;">
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+			</div>
+			<div class="row" style="min-height:200px;">
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#" style="background-image:url('img/beach.jpg');background-repeat: no-repeat;
+    background-position: center; min-height:200px;">
+            &nbsp;<br>
+          </a>
+				</div>
+			</div>
+			<div class="item item-divider dark-bg">
+				When
+			</div>
+			<div class="row">
+				<div class="col">
+					<a class="item" href="#">
+            January
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            February
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            March
+          </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<a class="item" href="#">
+            April
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            May
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            June
+          </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<a class="item" href="#">
+            July
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            August
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            September
+          </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<a class="item" href="#">
+            October
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            November
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            December
+          </a>
+				</div>
+			</div>
+			<div class="item item-divider assertive-bg">
+				How much to spend
+			</div>
+			<div class="row">
+				<div class="col">
+					<a class="item" href="#">
+            0 - 500 €
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            500 - 1.000 €
+          </a>
+				</div>
+				<div class="col">
+					<a class="item" href="#">
+            > 1000 €
+          </a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

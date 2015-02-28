@@ -1,0 +1,17 @@
+<ion-view title="With whom you travel?">
+	<ion-content>
+		<div class="list  list-inset" ng-controller="Q1Ctrl">
+    <div class="row gallery" style="min-height:200px;">
+				<div class="col col-50" ng-repeat="item in typeList">
+					<a class="item" alt="{{item.text}}" href="#/tab/q2/{{item.id}}" style="background-image:url({{item.img}});background-repeat: no-repeat;background-position: center; min-height:200px;">
+						{{item.text}}&nbsp;<br>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<pre ng-bind="typeList | json"></pre>
+		</div>
+	</ion-content>
+</ion-view>
