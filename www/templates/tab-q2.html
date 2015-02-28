@@ -3,15 +3,11 @@
 		<div class="list  list-inset" ng-controller="Q2Ctrl">
     <div class="row gallery" style="min-height:200px;">
 				<div class="col col-50" ng-repeat="item in destinationList">
-					<a class="item" alt="{{item.text}}" href="#" style="background-image:url({{item.img}});background-repeat: no-repeat;background-position: center; min-height:200px;">
+					<a class="item" alt="{{item.text}}" href="#/tab/q3/{{item.id}}" style="background-image:url({{item.img}});background-repeat: no-repeat;background-position: center; min-height:200px;">
 						{{item.text}}&nbsp;<br>
 					</a>
 				</div>
 			</div>
-		</div>
-
-		<div class="item">
-			<pre ng-bind="destinationList | json"></pre>
 		</div>
 	</ion-content>
 </ion-view>

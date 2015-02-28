@@ -1,0 +1,11 @@
+<ion-view title="And here are the results">
+	<ion-content>
+		<div data-ng-show="responseData" class="list  list-inset" ng-controller="ResultCtrl">
+			<a class="item item-thumbnail-left" href="#/result-details/{{item.id}}" ng-repeat="item in responseData">
+				<img src="img/iconmonstr.png">
+				<h2>{{item.flight}}</h2>
+				<p>{{item.id}}</p>
+			</a>
+		</div>
+	</ion-content>
+</ion-view>
