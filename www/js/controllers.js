@@ -70,14 +70,6 @@ angular.module('starter.controllers', [])
 	}
 ])
 
-/*.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
-})
-
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
-})
-*/
 .controller('ResultCtrl', function($scope, $http, $rootScope, $stateParams,
 	$ionicLoading) {
 	console.log($stateParams);
@@ -141,4 +133,14 @@ angular.module('starter.controllers', [])
 		console.log(JSON.stringify($scope.responseData));
 	}, 1000);
 
-});
+})
+
+.controller('DetailCtrl', ['$scope', '$http', '$rootScope', '$stateParams',
+	function($scope, $http, $rootScope, $stateParams) {
+		console.log($stateParams);
+		$scope.detail = {
+			'id': $stateParams.id,
+			'flight': 'LH400'
+		};
+	}
+]);
