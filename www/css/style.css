@@ -1,13 +1,69 @@
 /* Empty. Add your own CSS if you like */
-.tabs .tab-item .icon.mcfly {
-  background-repeat: no-repeat;
-  background-position: 50%;
-  height: 40%;
-  background-image: url('../img/iconmonstr.png');
-  background-size:contain;
-}
 
+.tabs .tab-item .icon.mcfly {
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 40%;
+	background-image: url('../img/iconmonstr.png');
+	background-size: contain;
+}
 .gallery {
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+#imagebg {
+	background: url('../img/boing747.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+#lhlist.list, #lhlist .item, html body.grade-a.platform-browser.platform-win32.platform-ready ion-nav-view.view-container ion-tabs.tabs-icon-top.tabs-color-active-positive.tabs-item-hide.pane.tabs-bottom.tabs-standard ion-nav-view.view-container.tab-content ion-view.pane ion-content#imagebg.scroll-content.ionic-scroll.has-header div.scroll div#lhlist.list.list-inset div.row.gallery div.col.col-50 a.item {
+	background-color: transparent;
+	border-width: 0;
+}
+html body.grade-a.platform-browser.platform-win32.platform-ready ion-nav-view.view-container ion-tabs.tabs-icon-top.tabs-color-active-positive.tabs-item-hide.pane.tabs-bottom.tabs-standard ion-nav-view.view-container.tab-content ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div#lhlist.list.list-inset div.row.gallery div.col.col-50 a.item div.lh-label.ng-binding {
+	background-color: #fff;
+	size: 12px;
+	min-height: 30px;
+	text-align: center;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	text-style: bold;
+	b
+}
+.lh-button {
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	max-height: 200px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+div.lh-lable {
+	min-height: 20px;
+	max-height: 20px;
+}
+.background-image {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	display: block;
+	background-image: url('../img/boing747.jpg');
+	width: 1200px;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+.pane {
+	background-color: transparent;
+}
+.noBackground {
+  background: rgba(255, 255, 255,0.4) !important;          /* or transparent, or background:none */
 }

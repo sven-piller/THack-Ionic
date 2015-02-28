@@ -1,10 +1,11 @@
 <ion-view title="With whom you travel?">
 	<ion-content>
-		<div class="list  list-inset" ng-controller="Q1Ctrl">
-    <div class="row gallery" style="min-height:200px;">
+		<div id="lhlist" class="list  list-inset" ng-controller="Q1Ctrl">
+			<div class="row gallery" style="min-height:200px;">
 				<div class="col col-50" ng-repeat="item in typeList">
-					<a class="item" alt="{{item.text}}" href="#/tab/q2/{{item.id}}" style="background-image:url({{item.img}});background-repeat: no-repeat;background-position: center; min-height:200px;">
-						{{item.text}}&nbsp;<br>
+					<a class="item" alt="{{item.text}}" href="#/tab/q2/{{item.id}}">
+						<div class="lh-button" style="background-image:url({{item.img}});"></div>
+						<div class="lh-label">{{item.text}}</div>
 					</a>
 				</div>
 			</div>
