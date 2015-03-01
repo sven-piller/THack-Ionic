@@ -4,10 +4,10 @@
 			<div class="row gallery">
 				<div class="col col-50" ng-repeat="item in responseData">
 					<a class="item lh-div" alt="{{item.text}}" href="#/tab/detail/{{item.id}}" style="border:4px solid {{item.color}};">
-						<div class="lh-button" style="background-image:url({{item.destination}});"></div>
-						<div class="lh-label flighticon" style="border:2px solid {{item.color}};background-color:{{item.color}}">
-							{{item.destination}}
-							<br /> {{item.price}}
+						<div class="lh-button" style="background-image:url(img/{{item.destination}}.png);"></div>
+						<div class="lh-label" style="border:2px solid {{item.color}};background-color:{{item.color}}">
+							{{item.destination_name}}
+							<br />€ {{item.price}}
 						</div>
 					</a>
 				</div>
