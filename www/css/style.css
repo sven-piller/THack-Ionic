@@ -18,25 +18,16 @@
 	background-position: center;
 	background-size: cover;
 }
-#lhlist.list, #lhlist .item, html body.grade-a.platform-browser.platform-win32.platform-ready ion-nav-view.view-container ion-tabs.tabs-icon-top.tabs-color-active-positive.tabs-item-hide.pane.tabs-bottom.tabs-standard ion-nav-view.view-container.tab-content ion-view.pane ion-content#imagebg.scroll-content.ionic-scroll.has-header div.scroll div#lhlist.list.list-inset div.row.gallery div.col.col-50 a.item {
+#lhlist.list, #lhlist .item, {
 	background-color: transparent;
 	border-width: 0;
 }
-html body.grade-a.platform-browser.platform-win32.platform-ready ion-nav-view.view-container ion-tabs.tabs-icon-top.tabs-color-active-positive.tabs-item-hide.pane.tabs-bottom.tabs-standard ion-nav-view.view-container.tab-content ion-view.pane ion-content.scroll-content.ionic-scroll.has-header div.scroll div#lhlist.list.list-inset div.row.gallery div.col.col-50 a.item div.lh-label.ng-binding {
-	background-color: #fff;
-	size: 12px;
-	min-height: 30px;
-	text-align: center;
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
-	text-style: bold;
-	b
-}
+
 .lh-button {
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 200px;
-	max-height: 200px;
+	min-height: 150px;
+	max-height: 150px;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 }
