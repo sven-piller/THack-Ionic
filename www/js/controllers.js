@@ -132,7 +132,7 @@ angular.module('starter.controllers', [])
 	$ionicLoading) {
 	console.log($stateParams);
 	$ionicLoading.show({
-			template: 'loading'
+			template: '<img src="img/spinner.gif" style="border:1px;padding:0">'
 		})
 		//$rootScope.request.money = $stateParams.money;
 	$scope.responseData = null;
@@ -234,7 +234,7 @@ angular.module('starter.controllers', [])
 		}];
 		$ionicLoading.hide();
 		console.log(JSON.stringify($scope.responseData));
-	}, 1000);
+	}, 5000);
 
 })
 
