@@ -1,22 +1,14 @@
-<ion-view title="How much money do you have?">
+<ion-view title="What max budget do you have?">
 	<ion-content>
-		<div class="row">
-			<div class="col">
-				<a class="item" href="#/tab/results/1">
-            0 - 500 €
-          </a>
+		<div class="list  list-inset" ng-controller="Q4Ctrl">
+			<div class="row gallery">
+				<div class="col col-50" ng-repeat="item in budgetList">
+					<a class="item lh-div" alt="{{item.text}}" href="#/tab/results/{{item.id}}" style="border:4px solid {{item.color}};">
+						<div class="lh-button" style="background-image:url({{item.img}});"></div>
+						<div class="lh-label" style="border:2px solid {{item.color}};background-color:{{item.color}}">{{item.text}}</div>
+					</a>
+				</div>
 			</div>
-			<div class="col">
-				<a class="item" href="#/tab/results/2">
-            500 - 1.000 €
-          </a>
-			</div>
-			<div class="col">
-				<a class="item" href="#/tab/results/3">
-            > 1000 €
-          </a>
-			</div>
-		</div>
 		</div>
 	</ion-content>
 </ion-view>
