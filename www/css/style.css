@@ -7,22 +7,18 @@
 	background-image: url('../img/iconmonstr.png');
 	background-size: contain;
 }
+
+.flighticon {
+	background-repeat: no-repeat;
+	height: 20% !important;
+	background-image: url('../img/iconmonstr.png');
+}
+
 .gallery {
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	min-height: 150px;
 }
-#imagebg {
-	background: url('../img/boing747.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-}
-#lhlist.list, #lhlist .item, {
-	background-color: transparent;
-	border-width: 0;
-}
-
 .lh-button {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -31,30 +27,12 @@
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 }
-div.lh-lable {
-	min-height: 20px;
-	max-height: 20px;
+div.lh-label {
+	padding: 2;
+	color: #fff;
+	font-style: bold;
+	text-align: center;
 }
-.background-image {
-	position: fixed;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	display: block;
-	background-image: url('../img/boing747.jpg');
-	width: 1200px;
-	height: 800px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
-}
-.pane {
-	background-color: transparent;
-}
-.noBackground {
-  background: rgba(255, 255, 255,0.4) !important;          /* or transparent, or background:none */
+.lh-div {
+	padding: 0;
 }

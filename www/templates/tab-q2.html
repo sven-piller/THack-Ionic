@@ -1,11 +1,11 @@
 <ion-view title="What do you want to do?">
 	<ion-content>
 		<div class="list  list-inset" ng-controller="Q2Ctrl">
-    <div class="row gallery" style="min-height:150px;">
-				<div class="col col-50" ng-repeat="item in destinationList" >
-					<a class="item" alt="{{item.text}}" href="#/tab/q3/{{item.id}}" style="border:4px solid {{item.color}};padding:0;">
+			<div class="row gallery">
+				<div class="col col-50" ng-repeat="item in destinationList">
+					<a class="item lh-div" alt="{{item.text}}" href="#/tab/q3/{{item.id}}" style="border:4px solid {{item.color}};">
 						<div class="lh-button" style="background-image:url({{item.img}});"></div>
-						<div class="lh-label" style="border:2px solid {{item.color}};padding:2;background-color:{{item.color}};color:#fff;font-style:bold;text-align:center;">{{item.text}}</div>
+						<div class="lh-label" style="border:2px solid {{item.color}};background-color:{{item.color}}">{{item.text}}</div>
 					</a>
 				</div>
 			</div>

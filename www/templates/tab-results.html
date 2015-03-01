@@ -1,11 +1,17 @@
 <ion-view title="And here are the results">
 	<ion-content>
-		<div data-ng-show="responseData" class="list  list-inset" ng-controller="ResultCtrl">
-			<a class="item item-thumbnail-left" href="#/tab/detail/{{item.id}}" ng-repeat="item in responseData">
-				<img src="img/iconmonstr.png">
-				<h2>{{item.flight}}</h2>
-				<p>{{item.id}}</p>
-			</a>
+		<div class="list  list-inset" ng-controller="ResultCtrl">
+			<div class="row gallery">
+				<div class="col col-50" ng-repeat="item in responseData">
+					<a class="item lh-div" alt="{{item.text}}" href="#/tab/detail/{{item.id}}" style="border:4px solid {{item.color}};">
+						<div class="lh-button" style="background-image:url({{item.destination}});"></div>
+						<div class="lh-label flighticon" style="border:2px solid {{item.color}};background-color:{{item.color}}">
+							{{item.destination}}
+							<br /> {{item.price}}
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</ion-content>
 </ion-view>
